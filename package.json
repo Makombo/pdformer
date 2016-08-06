@@ -1,26 +1,19 @@
 {
-  "name": "pdformer",
-  "version": "0.0.1",
-  "description": "API for filling pdf forms using fdf",
+  "name": "pdformem",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "author": "Chisomo Sakala",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Makombo/pdformer.git"
-  },
-  "keywords": [
-    "pdf",
-    "fdf"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Makombo/pdformer/issues"
-  },
-  "homepage": "https://github.com/Makombo/pdformer#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-
+    "express": "^4.14.0",
+    "pdf-fill-form": "^2.0.0"
   }
 }
