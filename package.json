@@ -1,0 +1,26 @@
+{
+  "name": "pdformer",
+  "version": "0.0.1",
+  "description": "API for filling pdf forms using fdf",
+  "main": "index.js",
+  "author": "Chisomo Sakala",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makombo/pdformer.git"
+  },
+  "keywords": [
+    "pdf",
+    "fdf"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Makombo/pdformer/issues"
+  },
+  "homepage": "https://github.com/Makombo/pdformer#readme",
+  "dependencies": {
+
+  }
+}
