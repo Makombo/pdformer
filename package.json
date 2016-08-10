@@ -1,19 +1,14 @@
 {
-  "name": "pdformem",
+  "name": "pdformer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+		"start" : "node server.js",
+		"prestart" : "npm install --no-bin-links"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "pdf-fill-form": "^2.0.0"
+    "pdf-fill-form": "^2.0.0",
+		"express": "^4.14.0"
+		
   }
 }

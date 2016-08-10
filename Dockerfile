@@ -8,17 +8,16 @@ VOLUME ["/usr/src/app"]
 
 
 # Install naitive dependencies
-RUN apt-get update && apt-get upgrade -y  && apt-get install -y python-software-properties \ 
+RUN apt-get update -y \ 
+  && apt-get install -y python-software-properties \ 
   && add-apt-repository "deb http://http.debian.net/debian wheezy-backports main" \  
-  && apt-get update && apt-get install -y libcairo2-dev \ 
-  && rm -rf /var/lib/apt/lists/*
-
-# Install node dependencies  
-RUN npm install -g node-gyp
-RUN npm install --save \ 
-	express \ 
-	pdf-fill-form
+  && apt-get update -y \ 
+  && apt-get install -y libcairo2-dev \ 
+  && apt-get -t wheezy-backports install -y libpoppler-qt4-dev \ 
+  && apt-get install -y build-essential \ 
+  && rm -rf /var/lib/apt/lists/* 
 
 
 EXPOSE 3000
-CMD [ "node", "index.js" ]
+ENTRYPOINT [ "npm" ]
+CMD [ "start" ]
